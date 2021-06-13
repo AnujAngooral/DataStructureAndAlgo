@@ -71,5 +71,48 @@ namespace Top_Interview_Questions
             head = first;
             return head;
         }
+
+
+        public static ListNode MergeTwoLists(ListNode l1, ListNode l2)
+        {
+            if (l1 == null && l2 == null) return l1;
+            if (l1 == null) return l2;
+            if (l2 == null) return l1;
+            ListNode dummyNode = new ListNode(0);
+            ListNode returnList = dummyNode;
+            
+            ListNode first = l1;
+            ListNode second = l2;
+
+            while (first != null && second != null!)
+            {
+                if (first.val < second.val)
+                {
+                    dummyNode.next = new ListNode(first.val);
+                    first=first.next;
+                }
+                else
+                {
+                    dummyNode.next = new ListNode(second.val);
+                    second = second.next;
+                }
+                dummyNode = dummyNode.next;
+            }
+
+            while (first != null) {
+                dummyNode.next = new ListNode(first.val);
+                first = first.next;
+                dummyNode = dummyNode.next;
+            }
+
+            while (second != null)
+            {
+                dummyNode.next = new ListNode(second.val);
+                second = second.next;
+                dummyNode = dummyNode.next;
+            }
+
+            return returnList;
+        }
     }
 }
