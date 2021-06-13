@@ -80,7 +80,7 @@ namespace Top_Interview_Questions
             if (l2 == null) return l1;
             ListNode dummyNode = new ListNode(0);
             ListNode returnList = dummyNode;
-            
+
             ListNode first = l1;
             ListNode second = l2;
 
@@ -89,7 +89,7 @@ namespace Top_Interview_Questions
                 if (first.val < second.val)
                 {
                     dummyNode.next = new ListNode(first.val);
-                    first=first.next;
+                    first = first.next;
                 }
                 else
                 {
@@ -99,7 +99,8 @@ namespace Top_Interview_Questions
                 dummyNode = dummyNode.next;
             }
 
-            while (first != null) {
+            while (first != null)
+            {
                 dummyNode.next = new ListNode(first.val);
                 first = first.next;
                 dummyNode = dummyNode.next;
@@ -112,7 +113,60 @@ namespace Top_Interview_Questions
                 dummyNode = dummyNode.next;
             }
 
-            return returnList;
+            return returnList.next;
+        }
+
+        public static bool IsPalindrome(ListNode head)
+        {
+            if (head.next == null) return true;
+            ListNode p = head, q = head;
+            ListNode secondHalf = null;
+            while (true)
+            {
+                p = p.next.next;
+                if (p == null)
+                {
+                    secondHalf = q.next;
+                    break;
+                }
+                if (p.next == null)
+                {
+                    secondHalf = q.next.next;
+                    break;
+                }
+
+                q = q.next;
+            }
+            q.next = null;
+            var reversedList = Reverse(secondHalf);
+            var firstHalf = head;
+            while (firstHalf != null && reversedList != null)
+            {
+                if (firstHalf.val != reversedList.val)
+                    return false;
+                firstHalf = firstHalf.next;
+                reversedList = reversedList.next;
+            }
+
+            return true;
+
+        }
+
+        private static ListNode Reverse(ListNode node)
+        {
+            ListNode currentNode = node;
+            ListNode prevNode = null;
+            ListNode nextNode = null;
+
+            while (currentNode != null)
+            {
+                nextNode = currentNode.next;
+                currentNode.next = prevNode;
+                prevNode = currentNode;
+                currentNode = nextNode;
+            }
+
+            return prevNode;
         }
     }
 }
