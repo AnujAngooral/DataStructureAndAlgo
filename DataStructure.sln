@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructure", "DataStructure\DataStructure.csproj", "{E39B769D-AFA9-47B6-A977-3C7B7501408B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{B47D8B15-6CC2-43BF-9F47-F630CC1F5C0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList\LinkedList.csproj", "{B47D8B15-6CC2-43BF-9F47-F630CC1F5C0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Top Interview Questions", "Top Interview Questions\Top Interview Questions.csproj", "{E58992F3-265E-4231-8A69-8B002E92EA41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B47D8B15-6CC2-43BF-9F47-F630CC1F5C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B47D8B15-6CC2-43BF-9F47-F630CC1F5C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B47D8B15-6CC2-43BF-9F47-F630CC1F5C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E58992F3-265E-4231-8A69-8B002E92EA41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E58992F3-265E-4231-8A69-8B002E92EA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E58992F3-265E-4231-8A69-8B002E92EA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E58992F3-265E-4231-8A69-8B002E92EA41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
