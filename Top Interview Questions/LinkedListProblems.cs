@@ -72,7 +72,12 @@ namespace Top_Interview_Questions
             return head;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="l1"></param>
+        /// <param name="l2"></param>
+        /// <returns></returns>
         public static ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
             if (l1 == null && l2 == null) return l1;
@@ -116,6 +121,11 @@ namespace Top_Interview_Questions
             return returnList.next;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="head"></param>
+        /// <returns></returns>
         public static bool IsPalindrome(ListNode head)
         {
             if (head.next == null) return true;
@@ -168,5 +178,23 @@ namespace Top_Interview_Questions
 
             return prevNode;
         }
+
+
+        public static bool HasCycle(ListNode head)
+        {
+            if (head == null || head.next == null) return false;
+            var slow = head;
+            var fast = head;
+
+            while(fast.next!=null && fast.next.next != null)
+            {
+                fast = fast.next.next;
+                slow = slow.next;
+                if (fast == slow) return true;
+            }
+            return false;
+        }
+
+
     }
 }
