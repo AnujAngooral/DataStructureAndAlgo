@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList\Li
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Top Interview Questions", "Top Interview Questions\Top Interview Questions.csproj", "{E58992F3-265E-4231-8A69-8B002E92EA41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trees", "Trees\Trees.csproj", "{D7D96CB7-83BE-4FEF-B283-132AE374D720}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trees", "Trees\Trees.csproj", "{D7D96CB7-83BE-4FEF-B283-132AE374D720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{9F47C303-0402-4DC6-8648-5D5050F39C7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D7D96CB7-83BE-4FEF-B283-132AE374D720}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7D96CB7-83BE-4FEF-B283-132AE374D720}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7D96CB7-83BE-4FEF-B283-132AE374D720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F47C303-0402-4DC6-8648-5D5050F39C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F47C303-0402-4DC6-8648-5D5050F39C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F47C303-0402-4DC6-8648-5D5050F39C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F47C303-0402-4DC6-8648-5D5050F39C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
