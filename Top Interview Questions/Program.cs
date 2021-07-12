@@ -7,7 +7,7 @@ namespace Top_Interview_Questions
         static void Main(string[] args)
         {
 
-         int max= MultipleProblems.LengthOfLongestSubstring("abcabcbb");
+         int max= StringProblems.LengthOfLongestSubstring("abcabcbb");
 
 
             ListNode node = new ListNode(1);
