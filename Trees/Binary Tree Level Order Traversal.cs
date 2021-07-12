@@ -19,10 +19,10 @@ namespace Trees
         {
             que.Enqueue(root);
 
-            while (que.Count > 0)
+            while (que!=null)
             {
                 List<int> subList = new List<int>();
-                for (int i = 0; i < level + 1; i++)
+                for (int i = 0; i < que.Count; i++)
                 {
                     var currentNode = que.Dequeue();
                     subList.Add(currentNode.val);

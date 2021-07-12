@@ -9,7 +9,7 @@ namespace Trees
         IList<int> lst = new List<int>();
         public IList<int> PostorderTraversal(TreeNode root)
         {
-
+                
             if (root != null)
                 helper(root);
             return lst;

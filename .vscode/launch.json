@@ -9,11 +9,12 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/LinkedList/bin/Debug/netcoreapp3.1/LinkedList.dll",
+            "program": "${workspaceFolder}/Top Interview Questions/bin/Debug/netcoreapp3.1/Top Interview Questions.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/LinkedList",
+            "cwd": "${workspaceFolder}/Top Interview Questions",
             "console": "internalConsole",
-            "stopAtEntry": false
+            "stopAtEntry": false,
+            "requireExactSource":false
         },
         {
             "name": ".NET Core Attach",
