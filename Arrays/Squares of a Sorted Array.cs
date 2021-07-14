@@ -10,7 +10,7 @@ namespace Arrays
         {
             //Input: nums = [-4, -1, 0, 3, 10]
             //Output:[0,1,9,16,100]
-
+            if (A.Length == 0) return A;
             int[] sortedSquares = new int[A.Length];
             int i = 0;
             int j = A.Length - 1;
