@@ -6,8 +6,7 @@ namespace Microsoft
     {
         static void Main(string[] args)
         {
-            Two_Sum.TwoSum(new int[] { 2, 7, 11, 15 }, 9);
-
+            Valid_Palindrome.IsPalindrome("A man, a plan, a canal: Panama");
             Console.WriteLine("Hello World!");
         }
     }
