@@ -9,8 +9,6 @@ namespace Microsoft
         public static string LongestPalindrome(string s)
         {
             if (s == null || s.Length < 1) return "";
-            int start = 0;
-            int end = 0;
             string ret = string.Empty;
 
             for (int i = 0; i < s.Length; i++)
@@ -27,13 +25,6 @@ namespace Microsoft
                     ret = len2;
                 }
 
-
-                //int len = Math.Max(len1, len2);
-
-                //if (len > end - start) {
-                //    start = i - ((len - 1) / 2);
-                //    end = i + ((len) / 2);
-                //}
             }
 
             return ret;
@@ -48,8 +39,8 @@ namespace Microsoft
                 right++;
             }
 
-            return s.Substring(i + 1, j - i - 1);
-            //return right - left + 1;
+            return s.Substring(left + 1, right - left - 1);
+
         }
     }
 }
