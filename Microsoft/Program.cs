@@ -6,8 +6,7 @@ namespace Microsoft
     {
         static void Main(string[] args)
         {
-            Valid_Parentheses valid_Parentheses = new Valid_Parentheses();
-            valid_Parentheses.IsValid("]");
+            Longest_Palindromic_Substring.LongestPalindrome("cbbd");
             Console.WriteLine("Hello World!");
         }
     }
