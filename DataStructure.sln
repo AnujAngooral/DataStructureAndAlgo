@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trees", "Trees\Trees.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{9F47C303-0402-4DC6-8648-5D5050F39C7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft", "Microsoft\Microsoft.csproj", "{7B4CB801-F19E-4639-9176-25CE907BB81B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft", "Microsoft\Microsoft.csproj", "{7B4CB801-F19E-4639-9176-25CE907BB81B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Karat", "Karat\Karat.csproj", "{DF63285F-3576-4D56-BAF8-8F11B4AC7AAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{7B4CB801-F19E-4639-9176-25CE907BB81B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B4CB801-F19E-4639-9176-25CE907BB81B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B4CB801-F19E-4639-9176-25CE907BB81B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF63285F-3576-4D56-BAF8-8F11B4AC7AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF63285F-3576-4D56-BAF8-8F11B4AC7AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF63285F-3576-4D56-BAF8-8F11B4AC7AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF63285F-3576-4D56-BAF8-8F11B4AC7AAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
