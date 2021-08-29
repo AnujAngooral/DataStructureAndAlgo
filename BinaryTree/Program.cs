@@ -1,14 +1,11 @@
 ﻿using System;
 
-namespace Karat
+namespace BinaryTree
 {
     class Program
     {
         static void Main(string[] args)
         {
-            SecurityBadge.find_mismatched();
-
-             var result=LongestCommonSubsequence.FindLongestCommonSubsequence();
             Console.WriteLine("Hello World!");
         }
     }
