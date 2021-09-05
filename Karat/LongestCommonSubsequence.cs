@@ -76,5 +76,66 @@ namespace Karat
 
             return null ;
         }
+
+
+        public static int FindLength(int[] nums1, int[] nums2)
+        {
+
+            int[,] dp = new int[nums2.Length + 1, nums2.Length + 1];
+            int rows = nums2.Length + 1;
+            int col = nums1.Length + 1;
+            int max = 0;
+            for (int i = 1; i < rows; i++)
+            {
+
+                for (int j = 1; j < col; j++)
+                {
+
+                    if (nums2[i - 1] == nums1[j - 1])
+                        dp[i, j] = dp[i - 1, j - 1] + 1;
+
+                    max = Math.Max(max, dp[i, j]);
+                }
+            }
+
+            Console.WriteLine("dp is: " + dp[rows - 1, col - 1]);
+            return max;
+
+        }
+
+        public static int FindLength_Test(int[] nums1, int[] nums2)
+        {
+
+            string[,] dp = new string[nums2.Length + 1, nums2.Length + 1];
+            int rows = nums2.Length + 1;
+            int col = nums1.Length + 1;
+            int max = 0; 
+            for (int i = 0; i < rows; i++)
+            {
+                dp[i, 0] = "";
+            }
+            for (int i = 0; i < col; i++)
+            {
+                dp[0, i] = "";
+            }
+            for (int i = 1; i < rows; i++)
+            {
+
+                for (int j = 1; j < col; j++)
+                {
+
+                    if (nums2[i - 1] == nums1[j - 1])
+                        dp[i, j] = dp[i - 1, j - 1].ToString() + "," + nums1[j - 1].ToString();
+                    else
+                        dp[i, j] = dp[i - 1, j].Length > dp[i, j - 1].Length ? dp[i - 1, j] : dp[i, j - 1];
+
+
+                }
+            }
+
+            Console.WriteLine("dp is: " + dp[rows - 1, col - 1]);
+            return max;
+
+        }
     }
 }
